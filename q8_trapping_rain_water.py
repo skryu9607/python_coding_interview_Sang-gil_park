@@ -5,7 +5,6 @@
 적어도 낮은 쪽은 그만큼 항상 채워진다는 것이기 때문에, 낮은 쪽에서 높은 쪽으로 서로 접근한다. 
 
 '''
-
 def trap(height:list[int]) -> int:
     if not height:
         return 0
@@ -24,5 +23,21 @@ def trap(height:list[int]) -> int:
     return volume
 a = [0,1,0,2,1,0,1,3,2,1,2,1]
 b = [3,3,3,3,3,2,3]
-print(trap(a))
-print(trap(b))
+print(trap(a)) # expected output is six.
+print(trap(b)) # expected output is one. 
+
+
+'''
+# Solution 2 - Stack
+def trap(height : list[int]) -> int:
+    stack = []
+    volume = 0
+
+    for i in range(len(height)):
+        # Inflection point
+        while stack and hieh
+
+'''
+
+
+

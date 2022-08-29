@@ -22,9 +22,29 @@ def isPalindrome(head:list) -> bool:
 input = [2,3,3,2,2]
 print(isPalindrome(input))
 '''
-from typing import List
+
+# Node definition
 class ListNode(object):
     def __init__(self,val = 0 , next =  None):
         self.val = val
         self.next = None
-def 
+'''head = ListNode(0)
+# Add new_node
+curr_node = head
+new_node = ListNode(1)
+curr_node.next = new_node
+curr_node = curr_node.next
+
+curr_node.next = ListNode(2)
+curr_node = curr_node.next
+# Print all node
+node = head
+while node:
+    print(node.val)
+    node=node.next
+# Delete node by value
+node = head
+while node.next:
+    if node.next.val == 2:
+        next_node = node.next.next
+        node.next = next_node'''

@@ -50,7 +50,7 @@ def add(data):
 node1 = ListNode(1)
 head = node1
 add(3)
-print(node1.next.data)
+print(next)
 '''
 class Solution(object):
     def mergetwo(self,l1:ListNode,l2:ListNode):
